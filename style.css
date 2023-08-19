@@ -31,19 +31,26 @@ section.alternate-background {
 }
 
 main img {
-  width: 100px;
+  margin: 20px;
+  width: 90%;
 }
+
 
 /* ---  Groups & Items --- */
 
 .group {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
 }
+
 
 .item {
   flex: 1;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-double {
@@ -62,6 +69,12 @@ header {
   font-family: "Pangolin", cursive;
   font-size: 72px;
   color: #fff;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -85,6 +98,11 @@ form {
   padding: 10px;
 }
 
+.form-group {
+  display: flex;
+  justify-content: space-between;
+}
+
 form label {
   font-weight: bold;
 }
@@ -100,7 +118,7 @@ form button {
   border: none;
   color: #fff;
   font-size: 24px;
-  padding: 15px;
+  padding: 15px; 
   width: 100%;
 }
 
@@ -117,3 +135,35 @@ footer p {
 }
 
 /* -------  Media Query ------- */
+@media all and (min-width: 768px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px
+  }
+
+  form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form select,
+  form input {
+  margin-bottom: 10px;
+  }
+
+  .group {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
