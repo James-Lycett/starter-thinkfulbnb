@@ -166,4 +166,10 @@ footer p {
     flex-direction: row;
   }
 
+  .item {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+
 }
