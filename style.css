@@ -40,7 +40,7 @@ main img {
 
 .group {
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
 }
 
 
@@ -164,12 +164,12 @@ footer p {
   .group {
     display: flex;
     flex-direction: row;
+    flex: 1;
   }
 
   .item {
     display: flex;
     flex-direction: row;
-    flex: 1;
   }
 
 }
