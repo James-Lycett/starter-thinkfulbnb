@@ -176,6 +176,11 @@ footer p {
     align-items: center;
   }
   
+  /* band-aid fix for flexbox browser incompatibility issue */
+  .special-img {
+    width: 40%
+  }
+  
   .item-double {
     flex: 2;
   }
@@ -198,13 +203,5 @@ footer p {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  /*
-  .ideas-item {
-    flex: 0 48%;
-    height: 100px;
-    margin-bottom: 2%;
-  }
-  */
-  
   
 }
